@@ -7,6 +7,7 @@
 // @match        https://x.com/*
 // @run-at      document-start
 // @grant        none
+// @license      MIT License
 // ==/UserScript==
 
 (function() {
