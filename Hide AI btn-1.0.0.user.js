@@ -7,13 +7,18 @@
 // @match        https://x.com/*
 // @run-at      document-start
 // @grant        none
-// @license      MIT License
 // ==/UserScript==
 
 (function() {
-    'use strict'
-    setTimeout(function(){
+var observer = new MutationObserver(function(mutations) {
+    try{
         var btn = document.querySelector('div[data-testid="GrokDrawer"]');
-        btn.style.visibility="hidden"
-    },1000);
+        var pfBTN=document.querySelector('a[href="/settings/profile"]').parentNode.children.item(1);
+        pfBTN.style.display="none"
+        btn.style.display="none"
+    }
+    catch (e) {
+    }
+    });
+    observer.observe(document, { childList: true, subtree: true });
 })();
