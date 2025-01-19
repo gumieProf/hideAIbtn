@@ -1,6 +1,7 @@
 # userscript
 
-hideAIbtn
+### hideAIbtn
+
 	Removes AI buttons added to X.
 
 ## License 
