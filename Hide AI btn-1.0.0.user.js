@@ -13,9 +13,9 @@
 var observer = new MutationObserver(function(mutations) {
     try{
         var btn = document.querySelector('div[data-testid="GrokDrawer"]');
+        btn.style.display="none"
         var pfBTN=document.querySelector('a[href="/settings/profile"]').parentNode.children.item(1);
         pfBTN.style.display="none"
-        btn.style.display="none"
     }
     catch (e) {
     }
