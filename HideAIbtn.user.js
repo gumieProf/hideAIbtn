@@ -12,6 +12,8 @@
 (function() {
 var observer = new MutationObserver(function(mutations) {
     try{
+        var menu = document.querySelector('a[href="/i/grok"]');
+        menu.style.display="none";
         var btn = document.querySelector('div[data-testid="GrokDrawer"]');
         btn.style.display="none"
         var pfBTN=document.querySelector('a[href="/settings/profile"]').parentNode.children.item(1);
