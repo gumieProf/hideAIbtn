@@ -5,8 +5,9 @@
 // @description  Removes AI buttons added to X.
 // @author       gumieProf
 // @match        https://x.com/*
-// @run-at      document-start
+// @run-at       document-start
 // @grant        none
+// @license      MIT
 // ==/UserScript==
 
 (function() {
